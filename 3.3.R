@@ -1,0 +1,6 @@
+x <- matrix(rnorm(100*10), 100, 10)
+x <- x + seq(nrow(x))
+x <- sweep(x, 1, 1:nrow(x),"+")
+x <- 1:ncol(x)
+dim(mnist$train$images)
+mean(mnist$train$images > 50 & mnist$train$images < 205)
